@@ -9,5 +9,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainStandardActivity"
+            android:launchMode="standard"/>
+        <activity android:name=".MainSingleTaskActivity"
+            android:launchMode="singleInstance"/>
     </application>
 </manifest>

@@ -4,14 +4,26 @@
 
     <application android:theme="@style/AppTheme">
         <activity android:name=".MainLibraryActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
         <activity android:name=".MainStandardActivity"
             android:launchMode="standard"/>
         <activity android:name=".MainSingleTaskActivity"
             android:launchMode="singleInstance"/>
+        <activity android:name=".MainSplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainLoginActivity"
+            android:windowSoftInputMode = "adjustResize|stateHidden"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.example.module_main.Login"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 </manifest>
